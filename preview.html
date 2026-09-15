@@ -27,7 +27,7 @@
   --sans:'Montserrat',system-ui,sans-serif;
   --hand:'Homemade Apple',cursive;
   --max:1180px;
-  --booking-url:'https://www.beaumontinn.com/';
+  --booking-url:'https://booking.hotelkeyapp.com/v2/index.html#/booking/search?pc=1331&property_id=4f68da0a-789e-4599-9265-04129375a734&url=https%3A%2F%2F';
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -466,9 +466,8 @@ footer .wm{font-family:var(--serif);letter-spacing:.24em;text-transform:uppercas
 
 <script>
 /* ── Booking destination: change this one line to your booking engine URL ── */
-const BOOKING_URL = "https://www.beaumontinn.com/";
-const UTM = "utm_source=landing&utm_medium=web&utm_campaign=fall2026";
-const bookHref = BOOKING_URL + (BOOKING_URL.includes('?') ? '&' : '?') + UTM;
+const BOOKING_URL = "https://booking.hotelkeyapp.com/v2/index.html#/booking/search?pc=1331&property_id=4f68da0a-789e-4599-9265-04129375a734&url=https%3A%2F%2F";
+const bookHref = BOOKING_URL;
 document.querySelectorAll('.js-book').forEach(a => { a.href = bookHref; });
 
 /* Sticky bar appears once the hero scrolls out of view */
